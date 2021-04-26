@@ -32,8 +32,17 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
-
+                  <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a href="{{ route('student.index') }}" class="nav-link">Studentai</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="{{ route('lecture.index') }}" class="nav-link">Paskaitos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('grade.index') }}" class="nav-link">Pažymiai</a>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->

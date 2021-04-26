@@ -68,15 +68,17 @@ class GradeController extends Controller
 
 
      
-    public function edit(Grade $grade)
-    {
+   
         
-        $students = \App\Models\Student::orderBy('name')->get();
-       
+        
+        public function edit(Grade $grade){
+            $lectures = \App\Models\Lecture::orderBy('name')->get();
+            $students=\App\Models\Student::orderBy('name')->get();
+            return view('grades.edit', ['grade' => $grade, 'lectures' => $lectures, 'students'=> $students]);
+        }
 
-        $lectures = \App\Models\Lecture::orderBy('name')->get();
-        return view('grades.edit', ['students'=> $students], ['lectures'=> $lectures], ['grades'=> $grade]);
-    }
+       
+    
 
    
     /**

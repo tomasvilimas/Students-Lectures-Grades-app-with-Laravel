@@ -4,16 +4,16 @@
    <div class="row justify-content-center">
        <div class="col-md-8">
            <div class="card">
-               <div class="card-header">Sukurkime studenta:</div>
+               <div class="card-header">Sukurkime studentą:</div>
                <div class="card-body">
                    <form action="{{ route('student.store') }}" method="POST">
                         @csrf
                         <div class="form-group">
-                            <label>pavadinimas: </label>
+                            <label>Vardas: </label>
                             <input type="text" name="name" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label>aprasas: </label>
+                            <label>Pavardė: </label>
                             <input type="text" name="surname" class="form-control"> 
                         </div>
                         <div class="form-group">

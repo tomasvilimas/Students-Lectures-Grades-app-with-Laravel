@@ -4,16 +4,16 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Pakeiskime pamoku informaciją</div>
+                <div class="card-header">Pakeiskime paskaitos informaciją</div>
                 <div class="card-body">
                     <form method="POST" action="{{ route('lecture.update', $lecture->id) }}">
                         @csrf @method("PUT")
                         <div class="form-group">
-                            <label>Vardas: </label>
+                            <label>Paskaita: </label>
                             <input type="text" name="name" class="form-control" value="{{ $lecture->name }}">
                         </div>
                         <div class="form-group">
-                            <label>Pavardė: </label>
+                            <label>Aprašymas: </label>
                             <input type="text" name="description" class="form-control" value="{{ $lecture->description }}"> 
                         </div>
                         

@@ -3,9 +3,9 @@
 <div class="card-body">
     <table class="table">
         <tr>
-            <th>paskaita</th>
-            <th>studentas</th>
-            <th>pazymus</th>
+            <th>Paskaita</th>
+            <th>Studentas</th>
+            <th>Pažymys</th>
             
         </tr>
         @foreach ($grades as $grade)
